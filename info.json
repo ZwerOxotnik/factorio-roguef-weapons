@@ -5,7 +5,7 @@
   "title": "Roguelike weapons [TEST VERSION]",
   "author": "kij336",
   "contact": "kij336@naver.com, zweroxotnik@gmail.com",
-  "description": "Roguelike weapons (not recipes, use /editor)\nAuthor: kij336\nModified by ZwerOxotnik",
+  "description": "Roguelike weapons (no recipes, use /editor)\nAuthor: kij336\nModified by ZwerOxotnik",
   "source": "https://github.com/ZwerOxotnik/factorio-roguef-weapons/",
   "dependencies": [
 		"base >= 1.1",

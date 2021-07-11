@@ -12,8 +12,7 @@ local light_gunshot_sounds = {
 }
 
 
--- weapon
-function weapon(name, cooldown, range, sound)
+local function weapon(name, cooldown, range, sound)
 	return {
 		type = "gun",
 		name = "weapon-" .. name,
@@ -120,8 +119,8 @@ data:extend({
 	}, weapon(29, 60, 20, {{filename = "__roguef-weapons__/sound/icecast.ogg", volume = 1}}) -- 86.4
 })
 
--- ammo  (n,target_type(entity,position,direction),source(shot effect),
-function ammo(name, target, source, data)
+
+local function ammo(name, target, source, data)
 	return {
 		type = "ammo",
 		name = "ammo-" .. name,
