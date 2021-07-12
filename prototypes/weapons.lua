@@ -275,7 +275,7 @@ data:extend({
 		name = "ammo-10",
 		localised_name = " ",
 		icon = "__base__/graphics/icons/firearm-magazine.png",
-		icon_size = 32,
+		icon_size = 64,
 		flags = {},
 		subgroup = "rf_ammo",
 		order = "a",
@@ -1150,8 +1150,8 @@ data:extend({
 				type = "instant",
 				target_effects = {
 					{type = "damage", damage = {amount = 10, type = "damage-player"}},
-						{type = "create-entity", entity_name = "target-elec-1"},
-						{type = "create-entity", entity_name = "hit-p-16-2", trigger_created_entity = "true"}
+					{type = "create-entity", entity_name = "target-elec-1"},
+					{type = "create-entity", entity_name = "hit-p-16-2", trigger_created_entity = "true"}
 				}
 			}
 		},
@@ -1176,8 +1176,8 @@ data:extend({
 				type = "instant",
 				target_effects = {
 					{type = "damage", damage = {amount = 5, type = "damage-player"}},
-						{type = "create-entity", entity_name = "target-elec-1"},
-						{type = "create-entity", entity_name = "hit-p-16-3", trigger_created_entity = "true"}
+					{type = "create-entity", entity_name = "target-elec-1"},
+					{type = "create-entity", entity_name = "hit-p-16-3", trigger_created_entity = "true"}
 				}
 			}
 		},
