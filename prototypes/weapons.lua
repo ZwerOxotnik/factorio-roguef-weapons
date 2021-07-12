@@ -125,8 +125,8 @@ local function ammo(name, target, source, data)
 		type = "ammo",
 		name = "ammo-" .. name,
 		localised_name = " ",
-		icon = "__0_16_graphics_revived__/graphics/icons/firearm-magazine.png",
-		icon_size = 32,
+		icon = "__base__/graphics/icons/firearm-magazine.png",
+		icon_size = 64,
 		flags = {},
 		subgroup = "rf_ammo",
 		order = "a",
@@ -274,7 +274,7 @@ data:extend({
 		type = "ammo",
 		name = "ammo-10",
 		localised_name = " ",
-		icon = "__0_16_graphics_revived__/graphics/icons/firearm-magazine.png",
+		icon = "__base__/graphics/icons/firearm-magazine.png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "rf_ammo",
@@ -1406,16 +1406,32 @@ data:extend({
 			scale = 0.75,
 			shift = {0, 0}
 		},
-		shadow = {
-			filename = "__0_16_graphics_revived__/graphics/entity/acid-projectile-purple/acid-projectile-purple-shadow.png",
-			line_length = 5,
-			width = 28,
-			height = 16,
-			frame_count = 33,
+		shadow =
+		{
+			filename = "__base__/graphics/entity/acid-projectile/acid-projectile-shadow.png",
+			line_length = 15,
+			width = 22,
+			height = 84,
+			frame_count = 15,
 			priority = "high",
-			scale = 0.5,
-			shift = {-0.09 * 0.5, 0.395 * 0.5}
-		}
+			shift = util.mul_shift(util.by_pixel(-2, 30), 0.6), -- TODO: check
+			draw_as_shadow = true,
+			scale = 0.6,
+			animation_speed = 1,
+			hr_version =
+			{
+				filename = "__base__/graphics/entity/acid-projectile/hr-acid-projectile-shadow.png",
+				line_length = 15,
+				width = 42,
+				height = 164,
+				frame_count = 15,
+				shift = util.mul_shift(util.by_pixel(-2, 31), 0.6),
+				draw_as_shadow = true,
+				priority = "high",
+				scale = 0.5 * 0.6,
+				animation_speed = 1
+			}
+		},
 	}, {
 		type = "projectile",
 		name = "p-22",
@@ -1778,15 +1794,31 @@ data:extend({
 			blend_mode = "additive"
 			-- animation_speed = 30/60
 		},
-		shadow = {
-			filename = "__0_16_graphics_revived__/graphics/entity/acid-projectile-purple/acid-projectile-purple-shadow.png",
-			line_length = 5,
-			width = 28,
-			height = 16,
-			frame_count = 33,
+		shadow =
+		{
+			filename = "__base__/graphics/entity/acid-projectile/acid-projectile-shadow.png",
+			line_length = 15,
+			width = 22,
+			height = 84,
+			frame_count = 15,
 			priority = "high",
-			scale = 0.5,
-			shift = {-0.09 * 0.5, 0.395 * 0.5}
+			shift = util.mul_shift(util.by_pixel(-2, 30), 0.6), -- TODO: check
+			draw_as_shadow = true,
+			scale = 0.6,
+			animation_speed = 1,
+			hr_version =
+			{
+				filename = "__base__/graphics/entity/acid-projectile/hr-acid-projectile-shadow.png",
+				line_length = 15,
+				width = 42,
+				height = 164,
+				frame_count = 15,
+				shift = util.mul_shift(util.by_pixel(-2, 31), 0.6),
+				draw_as_shadow = true,
+				priority = "high",
+				scale = 0.5 * 0.6,
+				animation_speed = 1
+			}
 		}
 	}, {
 		type = "projectile",
